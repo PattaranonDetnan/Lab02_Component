@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import EventCard from '@/components/EventCard.vue';
 import EventCard2 from '@/components/EventCard2.vue';
-import Event from '@/types/Event'
+import Event from '@/type/Event'
 import {ref,onMounted} from 'vue'
 import EventService from '@/services/EventService'
 
@@ -17,6 +17,7 @@ onMounted(()=>{
   .catch((error)=>{
     console.error('There was an error!',error)
   })
+ 
 })
 </script>
 
